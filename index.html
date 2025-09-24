@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <title>Responsive Web Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,3 +16,82 @@
     </section>
 </body>
 </html>
+=======
+  <meta charset="UTF-8">
+  <title>Jithin Bookstore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 45%;
+      min-width: 280px;
+    }
+    .book, .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .book:last-child, .cart-item:last-child {
+      border-bottom: none;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .remove-btn {
+      background: red;
+    }
+    .remove-btn:hover {
+      background: darkred;
+    }
+    .cart-total {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 My Bookstore</h1>
+  <div class="container">
+    <div class="box">
+      <h2>Available Books</h2>
+      <div id="bookList"></div>
+    </div>
+    <div class="box">
+      <h2>Your Cart 🛒</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₹0</div>
+    </div>
+  </div>
+
+  <!-- Main script as ES module -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+>>>>>>> 83ab4a0 (file created)
